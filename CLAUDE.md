@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Deployment
+
+The site deploys to **GitHub Pages** automatically via `.github/workflows/deploy.yml` on every push to `master`. No build step — the workflow uploads the repo root directly.
+
+Live URL pattern: `https://<username>.github.io/<repo-name>/Siraphop.html`
+
+To enable on a new repo: go to **Settings → Pages → Source** and set it to **GitHub Actions**.
+
 ## Running locally
 
 No build step or package manager. Serve the directory with any static file server — the fonts use relative paths so `file://` won't work for them:
